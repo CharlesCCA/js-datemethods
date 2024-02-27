@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap');
+
+body {
+  background-color: midnightblue;
+  background-image: url("https://media.istockphoto.com/id/1008828490/vector/creative-vector-illustration-of-top-view-simple-classic-wall-office-clock-isolated-on.jpg?s=612x612&w=0&k=20&c=W8hixvHwyy1SFrXYWeKHRleAJNicOdslbVSM8uQlxkU=");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.header {
+  color: darkcyan;
+  font-size: 48px;
+  text-shadow: 2px 2px midnightblue;
+  font-family: 'Kode Mono';
+}
+
+.subheader {
+  color: orangered;
+  font-size: 32px;
+  text-shadow: 2px 2px linen;
+  font-family: 'Kode Mono';
+}
+
+.timeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.fullDate {
+  font-family: 'Micro 5';
+  font-size: 52px;
+  color: mediumseagreen;
+  text-shadow: 2px 2px darkgreen;
+  background-color: black;
+  padding: 5px 15px;
+}
+
+.dateParts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'IM Fell DW Pica SC';
+  font-size: 36px;
+  text-shadow: 2px 2px lightgray;
+  padding: 5px 15px;
+}
+
+.day, .month, .date, .fullYear, .hours, .minutes, .seconds {
+  padding: 5px;
+  border: 10px outset darkcyan;
+  background-color: yellowgreen;
+}
