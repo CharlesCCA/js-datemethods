@@ -1,26 +1,81 @@
-const header = 'WHAT TIME IS IT?!';
-const subheader = 'JavaScript Date Methods';
-document.querySelector('.header').innerHTML = header;
-document.querySelector('.subheader').innerHTML = subheader;
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100..900&display=swap');
 
-const fullDate = new Date();
+body {
+  background-color: midnightblue;
+  background-image: url("https://media.istockphoto.com/id/1008828490/vector/creative-vector-illustration-of-top-view-simple-classic-wall-office-clock-isolated-on.jpg?s=612x612&w=0&k=20&c=W8hixvHwyy1SFrXYWeKHRleAJNicOdslbVSM8uQlxkU=");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
 
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+.header {
+  color: darkcyan;
+  font-size: 48px;
+  text-shadow: 2px 2px midnightblue;
+  font-family: 'Kode Mono';
+}
 
-const dayName = days[fullDate.getDay()];
+.subheader {
+  color: orangered;
+  font-size: 32px;
+  text-shadow: 2px 2px linen;
+  font-family: 'Kode Mono';
+  margin-top: -20px;
+}
 
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+.timeContainer {
+  display: flex;
+  flex-direction: column;
+}
 
-const monthName = months[fullDate.getMonth()];
+.fullDate {
+  font-family: 'Micro 5';
+  font-size: 52px;
+  color: mediumseagreen;
+  text-shadow: 2px 2px darkgreen;
+  background-color: black;
+  padding: 5px 15px;
+}
 
-document.querySelector('.fullDate').innerHTML = fullDate;
+.dateParts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'IM Fell DW Pica SC';
+  font-size: 36px;
+  text-shadow: 2px 2px lightgray;
+  padding: 5px 15px;
+}
 
-document.querySelector('.day').innerHTML = dayName;
-document.querySelector('.month').innerHTML = monthName;
-document.querySelector('.date').innerHTML = fullDate.getDate();
-document.querySelector('.fullYear').innerHTML = fullDate.getFullYear();
-document.querySelector('.hours').innerHTML = fullDate.getHours();
-document.querySelector('.minutes').innerHTML = fullDate.getMinutes();
-document.querySelector('.seconds').innerHTML = fullDate.getSeconds();
+.day, .month, .date, .fullYear, .hours, .minutes, .seconds {
+  padding: 5px;
+  border: 10px outset darkcyan;
+  background-color: yellowgreen;
+}
 
+.shortDate {
+  margin-top: 20px;
+  font-size: 36px;
+  font-family: 'Lora';
+  color: yellowgreen;
+  background-color: maroon;
+}
 
+.updateButton {
+  background-color: orangered;
+  color: linen;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  text-shadow: 2px 2px coral;
+  box-shadow: 3px 3px rgb(0, 0, 0, 0.3);
+  font-family: 'Big Shoulders Stencil Text';
+}
