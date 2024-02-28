@@ -62,7 +62,7 @@ body {
 .shortDate {
   margin-top: 20px;
   font-size: 36px;
-  font-family: 'Lora';
+  font-family: 'Lora', serif;
   color: yellowgreen;
   background-color: maroon;
 }
@@ -77,5 +77,5 @@ body {
   border-radius: 8px;
   text-shadow: 2px 2px coral;
   box-shadow: 3px 3px rgb(0, 0, 0, 0.3);
-  font-family: 'Big Shoulders Stencil Text';
+  font-family: 'Big Shoulders Stencil Text', cursive;
 }
