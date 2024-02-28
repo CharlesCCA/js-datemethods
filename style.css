@@ -68,6 +68,7 @@ body {
 }
 
 .updateButton {
+  font-family: 'Big Shoulders Stencil Text', cursive;
   background-color: orangered;
   color: linen;
   font-size: 24px;
