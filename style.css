@@ -60,11 +60,11 @@ body {
 }
 
 .shortDate {
+  color: yellowgreen;
+  background-color: maroon;
   margin-top: 20px;
   font-size: 36px;
   font-family: 'Lora';
-  color: yellowgreen;
-  background-color: maroon;
 }
 
 .updateButton {
